@@ -46,6 +46,10 @@
 #define KEYS_R 5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31
 #define THUMBS 32 33 34 35 36 37
 
+&lt {
+    quick-tap-ms = <175>;
+};
+
 / {
     behaviors {
         hml: home_row_mod_left {
@@ -53,7 +57,7 @@
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <10000>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
@@ -65,7 +69,7 @@
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <10000>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
@@ -96,7 +100,7 @@ label= "BASE"                              ;
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃   SHIFT   ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     K     ┃     M     ┃     ,     ┃     .     ┃     /     ┃     '     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃    ESC    ┃ TAB / NAV ┃   SPACE   ┃   ┃    BSPC   ┃ RET / SYM ┃    DEL    ┃
+//                                     ┃    ESC    ┃SPACE / NAV┃    TAB    ┃   ┃    RET    ┃ BSPC / SYM┃    GUI    ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
@@ -104,7 +108,7 @@ label= "BASE"                              ;
                 &kp Q           &kp W           &kp CM_F        &kp CM_P        &kp CM_G            &kp CM_J        &kp CM_L        &kp CM_U        &kp CM_Y        &kp CM_SCLN
                 &hml LGUI A     &hml LALT CM_R  &hml LCTRL CM_S &hml LSHFT CM_T &kp CM_D            &kp H           &hmr RSHFT CM_N &hmr RCTRL CM_E &hmr LALT CM_I  &hmr RGUI CM_O
     &kp LSHFT   &kp Z           &kp X           &kp C           &kp V           &kp B               &kp CM_K        &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp SQT
-                                                &kp ESC         &lt NAV TAB     &kp SPACE           &kp BSPC        &lt SYM RET     &kp DEL
+                                                &kp ESC         &lt NAV SPACE   &kp TAB             &kp RET         &lt SYM BSPC    &kp LGUI
                         >;
                 };
 
@@ -122,7 +126,7 @@ label= "NAV"                               ;
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃           ┃    UNDO   ┃    CUT    ┃    COPY   ┃   PASTE   ┃           ┃   ┃    MUTE   ┃    PREV   ┃    VOL-   ┃    VOL+   ┃    NEXT   ┃    PLAY   ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
+//                                     ┃           ┃    held   ┃           ┃   ┃           ┃ DEL / SYM ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
@@ -130,7 +134,7 @@ label= "NAV"                               ;
                 &none           &none           &none           &none           &none               &none           &kp HOME        &kp PG_DN       &kp PG_UP       &kp END
                 &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHFT       &none               &none           &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT
     &none       &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &none               &kp C_MUTE      &kp C_PREV      &kp C_VOL_DN    &kp C_VOL_UP    &kp C_NEXT      &kp C_PP
-                                                &trans          &trans          &trans              &trans          &trans          &trans
+                                                &trans          &trans          &trans              &trans          &lt SYM DEL     &trans
                         >;
                 };
 
@@ -148,7 +152,7 @@ label= "SYM"                               ;
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃     ~     ┃     `     ┃     [     ┃     ]     ┃     {     ┃     }     ┃   ┃     -     ┃     =     ┃     _     ┃     +     ┃     \     ┃     |     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
+//                                     ┃           ┃           ┃           ┃   ┃           ┃    held   ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
@@ -174,7 +178,7 @@ label= "ADJ"                               ;
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃ BOOTLOADER┃   RESET   ┃           ┃           ┃           ┃           ┃   ┃           ┃     F1    ┃     F2    ┃     F3    ┃    F10    ┃ BOOTLOADER┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
+//                                     ┃           ┃    held   ┃           ┃   ┃           ┃    held   ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
