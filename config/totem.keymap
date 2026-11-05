@@ -107,7 +107,7 @@ label= "BASE"                              ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃     Q     ┃     W     ┃     F     ┃     P     ┃     G     ┃   ┃     J     ┃     L     ┃     U     ┃     Y     ┃     ;     ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃  A / GUI  ┃  R / ALT  ┃  S / CTRL ┃ T / SHIFT ┃     D     ┃   ┃     H     ┃ N / SHIFT ┃  E / CTRL ┃  I / ALT  ┃  O / GUI  ┃
+//             ┃     A     ┃  R / ALT  ┃  S / CTRL ┃ T / SHIFT ┃     D     ┃   ┃     H     ┃ N / SHIFT ┃  E / CTRL ┃  I / ALT  ┃     O     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃   SHIFT   ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     K     ┃     M     ┃     ,     ┃     .     ┃     /     ┃     '     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -117,7 +117,7 @@ label= "BASE"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q           &kp W           &kp CM_F        &kp CM_P        &kp CM_G            &kp CM_J        &kp CM_L        &kp CM_U        &kp CM_Y        &kp CM_SCLN
-                &hml LGUI A     &hml LALT CM_R  &hml LCTRL CM_S &hml LSHFT CM_T &kp CM_D            &kp H           &hmr RSHFT CM_N &hmr RCTRL CM_E &hmr LALT CM_I  &hmr RGUI CM_O
+                &kp A           &hml LALT CM_R  &hml LCTRL CM_S &hml LSHFT CM_T &kp CM_D            &kp H           &hmr RSHFT CM_N &hmr RCTRL CM_E &hmr LALT CM_I  &kp CM_O
     &kp LSHFT   &kp Z           &kp X           &kp C           &kp V           &kp B               &kp CM_K        &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp SQT
                                                 &kp ESC         &lt NAV SPACE   &kp TAB             &kp BSPC        &mo SYM         &kp LGUI
                         >;
@@ -133,7 +133,7 @@ label= "NAV"                               ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃    HOME   ┃   PG DN   ┃   PG UP   ┃    END    ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃    GUI    ┃    ALT    ┃    CTRL   ┃   SHIFT   ┃           ┃   ┃           ┃    LEFT   ┃    DOWN   ┃     UP    ┃   RIGHT   ┃
+//             ┃           ┃    ALT    ┃    CTRL   ┃   SHIFT   ┃           ┃   ┃           ┃    LEFT   ┃    DOWN   ┃     UP    ┃   RIGHT   ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃           ┃    UNDO   ┃    CUT    ┃    COPY   ┃   PASTE   ┃           ┃   ┃    MUTE   ┃    PREV   ┃    VOL-   ┃    VOL+   ┃    NEXT   ┃    PLAY   ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -143,7 +143,7 @@ label= "NAV"                               ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &none           &none           &none           &none           &none               &none           &kp HOME        &kp PG_DN       &kp PG_UP       &kp END
-                &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHFT       &none               &none           &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT
+                &none           &kp LALT        &kp LCTRL       &kp LSHFT       &none               &none           &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT
     &none       &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &none               &kp C_MUTE      &kp C_PREV      &kp C_VOL_DN    &kp C_VOL_UP    &kp C_NEXT      &kp C_PP
                                                 &trans          &trans          &trans              &kp DEL         &trans          &trans
                         >;
